@@ -2,18 +2,23 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setcount] = useState(11);
+  const [count, setCount] = useState(11);
 
   const addValue = () => {
-    setcount(count + 1);
-    if (count == 20) {
-      setcount(count);
+    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
+
+    if (count < 20) {
+      setCount((prevCount) => prevCount + 1);
+    } else {
+      setCount((prevCount) => prevCount);
     }
   };
   const decValue = () => {
-    setcount(count - 1);
+    setCount(count - 1);
     if (count == 0) {
-      setcount(count);
+      setCount(count);
     }
   };
 
