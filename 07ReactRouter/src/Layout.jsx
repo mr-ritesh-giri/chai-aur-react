@@ -1,9 +1,8 @@
 import React from "react";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+import { Header, Footer } from "./Components";
 import { Outlet } from "react-router-dom";
 
-function Route() {
+function Layout() {
   return (
     <>
       <Header />
@@ -13,4 +12,4 @@ function Route() {
   );
 }
 
-export default Route;
+export default Layout;
