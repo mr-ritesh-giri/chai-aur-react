@@ -14,4 +14,4 @@ I have recently started learning React from Hitesh Chaudhary's tutorials. This R
 
 ## About Me
 
-I am passionate about web development and excited to expand my skills with React. Feel free to connect with me on <a href="#" target="_blank">LinkedIn</a>  *(Replace with your LinkedIn profile link)* or follow my progress here!
+I am passionate about web development and excited to expand my skills with React. Feel free to connect with me on <a href="#" target="_blank">LinkedIn</a>  *([Replace with your LinkedIn profile link](https://www.linkedin.com/in/ritesh-giri-b8b770242/))* or follow my progress here!
