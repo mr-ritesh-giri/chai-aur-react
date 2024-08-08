@@ -9,9 +9,9 @@ I have recently started learning React from Hitesh Chaudhary's tutorials. This R
 
 ## Resources
 
-- [Hitesh Chaudhary's React Course](https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige)
-- [Official React Documentation](https://reactjs.org/docs/getting-started.html)
+- <a href="https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige" target="_blank">Hitesh Chaudhary's React Course</a>
+- <a href="https://reactjs.org/docs/getting-started.html" target="_blank">Official React Documentation</a>
 
 ## About Me
 
-I am passionate about web development and excited to expand my skills with React. Feel free to connect with me on [LinkedIn](#)  *(Replace with your LinkedIn profile link)* or follow my progress here!
+I am passionate about web development and excited to expand my skills with React. Feel free to connect with me on <a href="#" target="_blank">LinkedIn</a>  *(Replace with your LinkedIn profile link)* or follow my progress here!
