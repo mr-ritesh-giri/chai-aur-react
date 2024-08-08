@@ -9,6 +9,7 @@ import {
 import Layout from "./Layout";
 import { Home, About, Contact, User, Github } from "./Components";
 import { githubInfoLoader } from "./Components/Github/Github";
+import "./index.css"
 
 // const router = createBrowserRouter([
 //   {
