@@ -1,8 +1,7 @@
-import React from "react";
-import ThemeBtn from "./Components/Button";
 import Card from "./Components/Card";
-import { ThemeProvider } from "./Context/ThemeContext";
-import { useEffect, useState } from "react";
+import ThemeBtn from "./Components/ThemeBtn";
+import { ThemeProvider } from "./Context/Theme";
+import { useState, useEffect } from "react";
 import "./index.css";
 
 function App() {
@@ -17,19 +16,19 @@ function App() {
   };
 
   useEffect(() => {
-    const htmlElement = document.querySelector("html");
-    htmlElement.classList.remove("light", "dark");
-    htmlElement.classList.add(themeMode);
+    const htmlTag = document.querySelector("html");
+    htmlTag.classList.remove("light", "dark");
+
+    htmlTag.classList.add(themeMode);
   }, [themeMode]);
 
   return (
-    <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-      <div className="flex flex-wrap min-h-screen items-center bg-slate-400 ">
+    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+      <div className="flex flex-wrap min-h-screen items-center bg-slate-500">
         <div className="w-full">
-          <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
+          <div className="w-full max-w-sm mx-auto flex justif-center mb-4">
             <ThemeBtn />
           </div>
-
           <div className="w-full max-w-sm mx-auto">
             <Card />
           </div>
