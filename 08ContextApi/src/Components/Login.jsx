@@ -24,7 +24,7 @@ function Login() {
       />
       {""}
       <input
-        type="text"
+        type="password"
         placeholder="Password"
         className="rounded-md p-2 text-black"
         value={password}
