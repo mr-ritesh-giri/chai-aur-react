@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TodoForm, TodoItem, TodoProvider } from "./index";
 import "./index.css";
 
@@ -16,7 +16,7 @@ function App() {
   };
 
   const deleteTodo = (id) => {
-    setTodos((prev) => prev.filter((prevTodo) => prevTodo.id !== id));
+    setTodos((prev) => prev.filter((todo) => todo.id !== id));
   };
 
   const toggleComplete = (id) => {
@@ -28,6 +28,17 @@ function App() {
       )
     );
   };
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"));
+    if (todos && todos.length > 0) {
+      setTodos(todos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <TodoProvider
@@ -43,7 +54,9 @@ function App() {
           </div>
           <div className="flex flex-wrap gap-y-3">
             {todos.map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
+              <div key={todo.id} className="w-full">
+                <TodoItem todo={todo} />
+              </div>
             ))}
           </div>
         </div>
