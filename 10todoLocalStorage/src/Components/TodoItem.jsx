@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useTodo } from "../index";
 
 function TodoItem({ todo }) {
-  const [isTodoEditable, setIsTodoEditable] = useState(false);
   const [todoMsg, setTodoMsg] = useState(todo.todo);
+  const [isTodoEditable, setIsTodoEditable] = useState(false);
   const { updateTodo, deleteTodo, toggleComplete } = useTodo();
 
   const editTodo = () => {
